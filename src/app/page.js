@@ -8,14 +8,15 @@ export default function Home() {
       <header className="bg-gray-800 text-white py-4 px-8 fixed top-0 left-0 w-full shadow-lg z-50">
         <nav className="flex items-center justify-between">
           <div className="text-lg font-semibold flex">
-          <Image
+            <Link href="/">
+              <Image
                 className=""
                 src={logo}
                 alt="logo"
                 width={170}
                 height={170}
               />
-            {/* <Link href="/">Aurora Inc</Link> */}
+            </Link>
           </div>
           <ul className="flex gap-6 text-sm">
             <li>
@@ -67,44 +68,24 @@ export default function Home() {
           className="py-16 px-8 bg-white text-center text-gray-700"
         >
           <h2 className="text-3xl font-bold mb-8">Features</h2>
-          <div className="grid sm:grid-cols-3 gap-8">
-            <div>
-              <div
-                className="bg-gray-600"
-                src="/feature1.svg"
-                alt="Feature 1"
-                width={80}
-                height={80}
-              />
-              <h3 className="font-semibold mt-4">Fast Performance</h3>
-              <p className="text-sm mt-2">
-                Experience blazing-fast loading times for your users.
-              </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 ">
+            <div className="flex items-center justify-center space-x-2 bg-gray-700">
+              <Image src="/path/to/logo1.png" alt="Gazprom" width={40} height={40} />
+              <span className="text-white">Газпром</span>
             </div>
-            <div>
-              <div
-                src="/feature2.svg"
-                alt="Feature 2"
-                width={80}
-                height={80}
-              />
-              <h3 className="font-semibold mt-4">Responsive Design</h3>
-              <p className="text-sm mt-2">
-                Your site will look great on any device.
-              </p>
+            <div className="flex items-center justify-center space-x-2">
+              <Image src="/path/to/logo2.png" alt="NIIT" width={40} height={40} />
+              <span className="text-white">НИИ Строительство</span>
             </div>
-            <div>
-              <div
-                src="/feature3.svg"
-                alt="Feature 3"
-                width={80}
-                height={80}
-              />
-              <h3 className="font-semibold mt-4">SEO Friendly</h3>
-              <p className="text-sm mt-2">
-                Boost your rankings with built-in optimizations.
-              </p>
+            <div className="flex items-center justify-center space-x-2">
+              <Image src="/path/to/logo3.png" alt="Elma" width={40} height={40} />
+              <span className="text-white">ЭЛМА</span>
             </div>
+            <div className="flex items-center justify-center space-x-2">
+              <Image src="/path/to/logo4.png" alt="Roseltorg" width={40} height={40} />
+              <span className="text-white">Росэлторг</span>
+            </div>
+            {/* Добавьте дополнительные блоки для остальных логотипов */}
           </div>
         </section>
 
