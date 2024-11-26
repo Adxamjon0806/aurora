@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "./navbar_logo.png"
 import Link from "next/link";
+import Features from "./features";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
                 height={170}
               />
             </Link>
-            
+
           </div>
           <ul className="flex gap-6 text-sm">
             <li>
@@ -40,11 +41,22 @@ export default function Home() {
       </header>
 
       <main className="pt-20">
-        <section className="min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center px-8">
-          <h1 className="text-4xl text-gray-600 font-bold mt-8">
+        <section className="background min-h-screen flex flex-col items-center justify-center text-center px-8">
+          <div className="absolute top-0 left-0 w-full h-screen">
+            <video
+              className="absolute top-0 left-0 w-25 h-25 object-cove rounded-full bg-transparent"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="https://flash-family.ru/DeepAI/9003286a-0770-4a6c-ae8a-ef2398f165f2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <h1 className="text-4xl text-white font-bold mt-8">
             Welcome to MyLanding
           </h1>
-          <p className="text-gray-600 mt-4 max-w-2xl">
+          <p className="text-white mt-4 max-w-2xl">
             Build stunning websites faster with Next.js and our tailored design
             approach.
           </p>
@@ -66,28 +78,9 @@ export default function Home() {
 
         <section
           id="features"
-          className="py-16 px-8 bg-white text-center text-gray-700"
+          className="py-16 px-8 background text-gray-700"
         >
-          <h2 className="text-3xl font-bold mb-8">Features</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 ">
-            <div className="flex items-center justify-center space-x-2 bg-gray-700">
-              <Image src="/path/to/logo1.png" alt="Gazprom" width={40} height={40} />
-              <span className="text-white">Газпром</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2">
-              <Image src="/path/to/logo2.png" alt="NIIT" width={40} height={40} />
-              <span className="text-white">НИИ Строительство</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2">
-              <Image src="/path/to/logo3.png" alt="Elma" width={40} height={40} />
-              <span className="text-white">ЭЛМА</span>
-            </div>
-            <div className="flex items-center justify-center space-x-2">
-              <Image src="/path/to/logo4.png" alt="Roseltorg" width={40} height={40} />
-              <span className="text-white">Росэлторг</span>
-            </div>
-            {/* Добавьте дополнительные блоки для остальных логотипов */}
-          </div>
+          <Features />
         </section>
 
         <section
