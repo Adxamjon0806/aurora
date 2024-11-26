@@ -17,6 +17,7 @@ export default function Home() {
                 height={170}
               />
             </Link>
+            
           </div>
           <ul className="flex gap-6 text-sm">
             <li>
