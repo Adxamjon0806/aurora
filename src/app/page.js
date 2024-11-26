@@ -95,9 +95,7 @@ export default function Home() {
         >
           <h2 className="text-3xl font-bold mb-8">About Us</h2>
           <p className="max-w-2xl mx-auto text-sm">
-            At MyLanding, we are passionate about crafting exceptional web
-            experiences. Leveraging Next.js, we deliver solutions that are fast,
-            modern, and user-friendly.
+            Aurora Inc — это инновационная компания, ориентированная на развитие информационной инфраструктуры Узбекистана и создание более доступной цифровой экономики. Стремясь стать лучше и масштабнее, чем существующие решения, Aurora создает мощные цифровые продукты и сервисы для повседневной жизни — от мультимедийных платформ и приложений для погоды и такси до благотворительных программ, помогающих исполнять мечты детей с онкологическими заболеваниями. В будущем компания планирует запустить собственный поисковик, который станет более надежной и удобной версией для местных пользователей. Системы обучения от Aurora Inc. призваны предоставить жителям страны доступ к современным знаниям, помогая каждому развиваться и расти. Ориентируясь на потребности широкой аудитории, Aurora Inc. стремится не просто развивать технологические продукты, но и менять жизнь общества к лучшему, создавая удобные и социально значимые решения для всех.
           </p>
         </section>
 
@@ -120,7 +118,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-gray-900 text-white py-4 text-center">
-        <p>&copy; {new Date().getFullYear()} created by Fymos. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} created by Aurora Inc. All rights reserved.</p>
       </footer>
     </>
   );
