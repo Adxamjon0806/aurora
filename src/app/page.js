@@ -1,8 +1,11 @@
+"use client";
+
+import { useRef } from "react";
 import Image from "next/image";
 import logo from "./navbar_logo.png"
 import Link from "next/link";
-import Features from "./features";
-
+import Features from "./components/features";
+import CanvasAnimation from "./components/animation";
 export default function Home() {
   return (
     <>
@@ -42,25 +45,13 @@ export default function Home() {
 
       <main className="pt-20">
         <section className="background min-h-screen flex flex-col items-center justify-center text-center px-8">
-          <div className="absolute top-0 left-0 w-full h-screen">
-            <video
-              className="absolute top-0 left-0 w-25 h-25 object-cove rounded-full bg-transparent"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="https://flash-family.ru/DeepAI/9003286a-0770-4a6c-ae8a-ef2398f165f2.mp4" type="video/mp4" />
-            </video>
+          <div className="absolute w-full ">
+            {/* <CanvasAnimation /> */}
           </div>
-          <h1 className="text-4xl text-white font-bold mt-8">
-            Welcome to MyLanding
+          <h1 className="font-oswald text-5xl text-black font-bold">
+              От великих идей - к великому будущему
           </h1>
-          <p className="text-white mt-4 max-w-2xl">
-            Build stunning websites faster with Next.js and our tailored design
-            approach.
-          </p>
-          <div className="mt-8 flex gap-4">
+          {/* <div className="mt-8 flex gap-4">
             <Link
               href="#features"
               className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-blue-500 transition"
@@ -73,7 +64,7 @@ export default function Home() {
             >
               Contact Us
             </Link>
-          </div>
+          </div> */}
         </section>
 
         <section

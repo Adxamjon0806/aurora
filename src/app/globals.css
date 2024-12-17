@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  /* --background: #18181B; */
   --foreground: #171717;
+  --background: #ffffff; /* по умолчанию белый фон */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* --background: #18181B; */
     --foreground: #ededed;
+    --background: #ffffff; /* темный фон в тёмной теме */
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oswald', sans-serif; /* Применяем шрифт Oswald */
 }
